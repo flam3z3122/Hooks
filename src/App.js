@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import TestUserEffect from './Components/useEffectHook';
-// import Hooks from './Components/useStateHook';
+import Hooks from './Components/useStateHook';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Hooks/> */}
+      <Hooks/>
       {/* <TestUserEffect/> */}
 
       {showComp ? <TestUserEffect/> : null}
