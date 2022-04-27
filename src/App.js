@@ -1,11 +1,20 @@
 
+import { useState } from 'react';
 import './App.css';
-import Hooks from './Components/Hooks';
+import TestUserEffect from './Components/useEffectHook';
+// import Hooks from './Components/useStateHook';
 
 function App() {
+
+  const [showComp ,setShowComp]=useState(true);
+
   return (
     <div className="App">
-      <Hooks/>
+      {/* <Hooks/> */}
+      {/* <TestUserEffect/> */}
+
+      {showComp ? <TestUserEffect/> : null}
+      <button onClick={()=>setShowComp(!showComp)}>unmount useEffect Component</button>
     </div>
   );
 }
